@@ -8,7 +8,7 @@ class MyHandler(http.server.SimpleHTTPRequestHandler):
             self.send_response(200)
             self.send_header('Content-type', 'text/plain')
             self.end_headers()
-            self.wfile.write(b"Welcome to the home page!!!?")
+            self.wfile.write(b"Welcome to the home page!?")
         elif self.path == '/status':
             self.send_response(200)
             self.send_header('Content-type', 'application/json')
