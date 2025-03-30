@@ -18,7 +18,7 @@ class MyHandler(http.server.SimpleHTTPRequestHandler):
             self.send_response(200)
             self.send_header('Content-type', 'text/plain')
             self.end_headers()
-            self.wfile.write(b"Hello, world!")
+            self.wfile.write(b"Hello, world!?")
         else:
             self.send_response(404)
             self.send_header('Content-type', 'text/plain')
